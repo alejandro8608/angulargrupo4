@@ -1,0 +1,57 @@
+
+$color-1: #c71010;
+$color-2: #f6fa0b;
+$color-3: #005813;
+$color-4: #1a007a;
+$color-5: #fafafd;
+
+$tam1: 80px;
+$tam2: .5 rem;
+
+.specials {
+  overflow: hidden;
+}
+
+.section-title h2 {
+    margin: 15px 0 0 0;
+    font-size: $tam1; /*32px*/
+    font-weight: 700;
+    color: $color-1; /*#5f5950*/
+  }
+
+  .section-title h2 span {
+    color: $color-3;
+  }
+  .specials .details h3 {
+    font-size: 26px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: $color-2; /*#433f39*/
+  }
+
+  .specials .nav-link:hover {
+    color: $color-3;
+  }
+  
+  .specials .nav-link.active {
+    color: $color-1;
+    border-color: $color-2;
+  }
+
+  @media (max-width: 400px) {
+    .section-title h2 span {
+      color: $color-4;
+    }
+  }
+
+  @media (max-width: 768px) {
+    .specials {
+      background-image:url(/assets/img/aguayo.jpg);
+    }
+    .section-title h2 span {
+      color: $color-5;
+      font-size:$tam2;
+      text-align: center;
+      
+    }
+  }
